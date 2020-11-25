@@ -1,0 +1,33 @@
+{% extends 'index.html' %} {% block content %}
+<center>
+    <div class="p1">
+        <b>PREDICTION</b>
+    </div>
+    <br>
+    <div class="container">
+        <b>Department: </b> {{depart}}<br>
+        <b>Education: </b> {{edu}}<br>
+        <b>Recruitment channel: </b> {{recruitmentchannel}}<br>
+        <b>KPIs achievement: </b> {{kpis}}<br>
+        <b>Winning awards: </b> {{awards}}<br>
+        <b>Previous year rating: </b> {{rating}}<br>
+        <b>Service length: </b> {{servicerange}}<br>
+        <b>Number of trainings: </b> {{trainnum}}<br>
+        <b>Trainings score average: </b> {{avgts}}<br>
+        <br>
+        <b>Prediction : </b> {{pred}}<br>
+    </div>
+    <hr>
+    <a href="/pred_lr" target="_self">
+        <button style="background-color: rgb(255, 90, 95); color: whitesmoke" class="btn btn-light">
+            Predict Again
+        </button>
+    </a>
+    <a href="/" target="_self">
+        <button style="background-color: rgb(255, 90, 95); color: whitesmoke" class="btn btn-light">
+            Back to Home
+        </button>
+    </a>
+</center>
+
+{% endblock %}
